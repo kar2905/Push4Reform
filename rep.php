@@ -86,6 +86,19 @@ if($count < 1){
           </div>
         </div>
       </div>
+      <div class="col-md-8">
+      	<?php 
+      		require("dbinfo.php");
+
+$sql = "SELECT * FROM users";
+$res = mysql_query($sql);
+
+while($row = mysql_fetch_assoc($res)){
+	echo "<img src='http://graph.facebook.com/".$row['id']."/picture?type=large' width='50px' height='50px'/>";
+
+}
+?>
+     </div>
     </div>
   </div>
 </div>

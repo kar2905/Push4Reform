@@ -26,30 +26,31 @@ html, body {
     top: 0; }
 
 .reps-list {
-  margin-top: 30px; }
+  width: 800px;
+  margin-top: 20px; }
   .reps-list .representative-container .thumbnail {
     padding: 0; }
     .reps-list .representative-container .thumbnail .clip {
-      height: 300px;
+      height: 200px;
       overflow: hidden; }
     .reps-list .representative-container .thumbnail img {
       width: 100%;
       margin-top: -50px; }
   .reps-list .grade {
-    width: 95px;
-    height: 95px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 20px;
+    line-height: 33px;
     border: 5px solid white;
-    -webkit-box-shadow: 0px 0px 20px #323232;
-    -moz-box-shadow: 0px 0px 20px #323232;
-    box-shadow: 0px 0px 20px #323232;
+    -webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.5);
     position: absolute;
-    top: -47px;
-    left: 132px; }
+    top: -23px;
+    left: 96px; }
     .reps-list .grade.a {
       background: #00eecf; }
     .reps-list .grade.b {
@@ -59,20 +60,21 @@ html, body {
     .reps-list .grade.a-plus span {
       margin-left: 5px; }
   .reps-list .caption {
-    padding-top: 40px;
+    padding-top: 20px;
     position: relative; }
     .reps-list .caption h1 {
-      color: #360a44; }
+      color: #360a44;
+      font-size: 20px; }
     .reps-list .caption h1, .reps-list .caption h2, .reps-list .caption h3 {
       text-align: center;
       margin: 10px 0; }
     .reps-list .caption h2, .reps-list .caption h3 {
       font-weight: lighter;
       color: #5d5360;
-      font-size: 28px; }
+      font-size: 14px; }
     .reps-list .caption h3 {
       text-transform: uppercase;
-      margin-bottom: 35px; }
+      margin-bottom: 20px; }
 
 .zip-container {
   background-image: url("../img/home-bg.jpg");

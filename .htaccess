@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^([a-z]{2,3})/([a-zA-Z0-9_-]+)$ rep.php?lang=$1&rep=$2 [QSA]

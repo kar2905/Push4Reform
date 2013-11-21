@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -23,6 +24,18 @@
 
         <!-- Add your site or application content here -->
 
+        <div class="header">
+        </div>
+        <div class="zip-container">
+          <p> “I support a pathway to citizenship because I don't believe we should have a second class of citizens.”  - Don Younge Texas Representative Wall Street Journal</p>
+          <h1>Where does your representative stand on immigration reform?</h1>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="text" class="input-lg form-control" placeholder="Enter your zip code"/>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+          </form>
+        </div>
         <div class="container reps-list" >
           <div class="row" id="reps-list">
           </div>

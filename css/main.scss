@@ -1,3 +1,6 @@
+body{
+  background: #faf6f8;
+}
 .profile{
   img{
     width: 100%;
@@ -22,11 +25,12 @@
   .representative-container .thumbnail{
     padding: 0; 
     .clip{
-      height: 415px;
+      height: 300px;
       overflow: hidden;
     }
     img{
       width: 100%; 
+      margin-top: -50px;
     }
   }
   .grade{
@@ -76,5 +80,30 @@
       text-transform: uppercase;
       margin-bottom: 35px;
     }
+  }
+}
+
+.zip-container{
+  background-image: url("../img/home-bg.jpg");
+  background-size: 100% 100%;
+  height: 300px;
+  color: #06324c;
+  p{
+    width: 600px;
+    margin: 0 auto;
+    padding-top:30px;
+    text-align:center;
+    font-family: Nexa-Bold;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  h1{
+    font-size: 50px;
+    width: 960px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  form{
+    text-align: center;
   }
 }

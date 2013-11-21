@@ -1,13 +1,12 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-var_dump($ip);
 if(filter_var($ip,FILTER_VALIDATE_IP,FILTER_FLAG_IPV4)){
   $json = file_get_contents('http://ipinfo.io/'.$ip.'/region');
   $obj = json_decode($json);
   $state = $obj;
 }
 else{
-  $state = "California"
+  $state = "California";
 }
 
   include 'includes/header.php';
@@ -47,5 +46,14 @@ else{
   include 'includes/footer.php';
 ?>
 <script src="js/main.js"></script>
+<script>
+var reps = new RepList("<?=$state?>");
+
+var p = reps.fetch();
+
+p.done(function(){
+  new window.RepListView(reps)
+});
+</script>
 </body>
 </html>

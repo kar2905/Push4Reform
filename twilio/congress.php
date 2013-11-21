@@ -13,5 +13,3 @@ $congressman = mysql_fetch_assoc(mysql_query($sql));
 <Response>
     <Dial><?php echo $congressman['phone']?></Dial>
 </Response>
-
-?>

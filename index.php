@@ -51,9 +51,9 @@
                   <img src="https://s3.amazonaws.com/push4reform/<%- bioguide_id  %>.jpg" />
                 </div>
                 <div class="caption">
-                  <div class="img-circle a a-plus grade"><span>A</span></div>
+                  <div class="img-circle a grade"><span>A</span></div>
                   <h1><%- firstname + ' ' + lastname %></h1>
-                  <h2><%- title + ' ' + party %></h2>
+                  <h2><%- party + ' ' + title %></h2>
                   <h3><%- state %></h3>
                   <a class="btn btn-primary btn-lg btn-block">Contact</a>
                 </div>

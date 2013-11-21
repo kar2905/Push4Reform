@@ -1,11 +1,12 @@
 body {
   background: #faf6f8; }
 
+html, body {
+  height: 100%; }
+
 .header {
   height: 35px; }
   .header .logo {
-    font-family: Nexa-Bold;
-    font-weight: lighter;
     font-size: 20px;
     color: #06324c;
     margin-left: 30px;
@@ -75,7 +76,10 @@ body {
 
 .zip-container {
   background-image: url("../img/home-bg.jpg");
-  background-size: 100% 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #f7edef;
   height: 300px;
   color: #06324c; }
   .zip-container p {
@@ -93,3 +97,15 @@ body {
     text-align: center; }
   .zip-container form {
     text-align: center; }
+
+.profile-page {
+  background-image: url("../img/bigprofile.jpg");
+  background-size: 100% auto;
+  height: 100%;
+  padding-top: 140px; }
+  .profile-page .profile-container {
+    width: 800px;
+    height: 100%;
+    background: white;
+    margin: 0 auto;
+    padding: 30px; }

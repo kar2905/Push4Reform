@@ -94,7 +94,7 @@ $sql = "SELECT * FROM users";
 $res = mysql_query($sql);
 
 while($row = mysql_fetch_assoc($res)){
-	echo "<img src='http://graph.facebook.com/".$row['id']."/picture?type=large' width='50px' height='50px'/>";
+	echo "<img style='padding:5px;' src='http://graph.facebook.com/".$row['id']."/picture?type=large' width='70px' height='70px'/>";
 
 }
 ?>

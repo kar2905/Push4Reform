@@ -14,9 +14,9 @@ else{
 <div class="zip-container">
   <p> “I support a pathway to citizenship because I don't believe we should have a second class of citizens.”  - Don Younge Texas Representative Wall Street Journal</p>
   <h1>Where does your representative stand on immigration reform?</h1>
-  <form class="form-inline">
+  <form class="form-inline" method="GET">
     <div class="form-group">
-      <input type="text" class="input-lg form-control" placeholder="Enter your zip code"/>
+      <input type="text" name="zip" class="input-lg form-control" placeholder="Enter your zip code"/>
     </div>
     <button type="button" class="btn btn-primary btn-lg">Submit</button>
   </form>

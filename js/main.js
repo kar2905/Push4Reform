@@ -15,6 +15,7 @@
   });
 
   RepView = Backbone.View.extend({
+    className: "col-md-4 representative-container",
     template: _.template($("#rep-template").html().trim()),
     render: function() {
       this.$el.html(this.template(this.model.attributes));

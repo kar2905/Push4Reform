@@ -14,6 +14,8 @@ window.RepList = Backbone.Collection.extend({
 
 RepView = Backbone.View.extend(
 
+  className: "col-md-4 representative-container"
+
   template: _.template($("#rep-template").html().trim())
 
   render: ->

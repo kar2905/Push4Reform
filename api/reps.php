@@ -12,7 +12,7 @@ if(isset($zip)){
 $sql = "SELECT firstname,lastname, title, party, b.name_long as state, bioguide_id, rating FROM sunlight a, state b, congressratings c, congresszip d WHERE a.district = c.district and a.state = c.state and a.state = b.name_short  and a.district = d.district and a.state = d.state and d.zip = '".$zip."' LIMIT 20";
 }
 else if(isset($state)){
-$sql = "SELECT firstname,lastname, title, party, b.name_long as state, bioguide_id, rating FROM sunlight a, state b, congressratings c WHERE a.district = c.district and a.state = c.state and a.state = b.name_short  and a.state = '".$state."' LIMIT 20";
+$sql = "SELECT firstname,lastname, title, party, b.name_long as state, bioguide_id, rating FROM sunlight a, state b, congressratings c WHERE a.district = c.district and a.state = c.state and a.state = b.name_short  and b.name_long = '".$state."' LIMIT 20";
 
 }
 else{

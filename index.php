@@ -1,3 +1,17 @@
+<?php
+
+$ip = $_SERVER['REMOTE_ADDR'];
+var_dump($ip);
+if(filter_var($ip,FILTER_VALIDATE_IP,FILTER_FLAG_IPV4)){
+  $json = file_get_contents('http://ipinfo.io/'.$ip.'/region');
+  $obj = json_decode($json);
+  $state = $obj;
+}
+else{
+  $state = "California"
+}
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->

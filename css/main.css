@@ -1,16 +1,19 @@
 body {
-  background: #faf6f8; }
+  background: white; }
 
 html, body {
   height: 100%; }
 
 .header {
-  height: 35px; }
+  height: 50px; }
   .header .logo {
     font-size: 20px;
     color: #06324c;
     margin-left: 30px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    background-image: url("../img/push4reform_logo.png");
+    background-repeat: no-repeat;
+    height: 100%; }
 
 .profile img {
   width: 100%; }
@@ -57,7 +60,7 @@ html, body {
     .reps-list .grade.c {
       background: #e59700; }
     .reps-list .grade.d {
-      background: #e12f2f; }
+      background: #ba511e; }
     .reps-list .grade.f {
       background: #ae3451; }
     .reps-list .grade.a-plus span {
@@ -78,6 +81,35 @@ html, body {
     .reps-list .caption h3 {
       text-transform: uppercase;
       margin-bottom: 20px; }
+
+.grade {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 33px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3); }
+  .grade.a {
+    background: #00eecf; }
+  .grade.b {
+    background: #e5e200; }
+  .grade.c {
+    background: #e59700; }
+  .grade.d {
+    background: #ba511e; }
+  .grade.f {
+    background: #ae3451; }
+  .grade.a-plus span {
+    margin-left: 5px; }
 
 .zip-container {
   background-image: url("../img/home-bg.jpg");
@@ -114,6 +146,10 @@ html, body {
     background: white;
     margin: 0 auto;
     padding: 25px 40px; }
+    .profile-page .profile-container .btn-block .fa {
+      position: absolute;
+      left: 10px;
+      font-size: 22px; }
     .profile-page .profile-container h1 {
       color: #06324c;
       font-size: 35px;
@@ -148,3 +184,43 @@ html, body {
       background: #21b1ed; }
     .profile-page .btn.fb {
       background: #39579a; }
+  .profile-page .grade-section {
+    padding: 20px 0;
+    margin-top: 10px;
+    border-top: 1px solid #e5e5e5; }
+    .profile-page .grade-section h2 {
+      line-height: 28px; }
+    .profile-page .grade-section.first h2 {
+      line-height: normal; }
+    .profile-page .grade-section .yes, .profile-page .grade-section .no {
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      display: block; }
+    .profile-page .grade-section .no {
+      color: #ae3451; }
+    .profile-page .grade-section .yes {
+      color: #00eecf; }
+    .profile-page .grade-section .grade {
+      margin-top: -6px; }
+    .profile-page .grade-section h2 {
+      color: #06324c;
+      font-weight: normal; }
+    .profile-page .grade-section .social {
+      margin-top: 5px; }
+      .profile-page .grade-section .social a {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: white;
+        height: 20px;
+        width: 20px;
+        display: inline-block; }
+        .profile-page .grade-section .social a.facebook {
+          background: #39579a; }
+          .profile-page .grade-section .social a.facebook i {
+            margin-left: 8px; }
+        .profile-page .grade-section .social a.twitter {
+          background: #21b1ed; }
+          .profile-page .grade-section .social a.twitter i {
+            margin-left: 3px; }

@@ -36,14 +36,55 @@ if($count < 1){
           <img src="https://s3.amazonaws.com/push4reform/<?=$row['bioguide_id'] ?>.jpg">
         </div>
         <button type="button" class="phone btn btn-lg btn-block"><span class="glyphicon glyphicon-earphone"></span><?= $row['phone'] ?></button>
-        <button type="button" class="twitter btn btn-lg btn-block">@<?= $row['twitter_id'] ?></button>
-        <button type="button" class="fb btn btn-lg btn-block"><?= $row['facebook_id'] ?></button>
+        <a class="twitter btn btn-lg btn-block" href="http://twitter.com/<?=$row['twitter_id']?>"><i class="fa fa-twitter"></i>@<?= $row['twitter_id'] ?></button>
+        <a class="fb btn btn-lg btn-block" href="http://facebook.com/<?=$row['facebook_id'] ?>"><i class="fa fa-facebook-square"></i>Facebook</a>
       </div>
-      <?= $row['rating'] ?>
       <div class="col-md-8">
         <h1><?= $row['firstname'] ?> <?=$row['lastname'] ?></h1>
         <h2><?= $row['party'] ?> <?= $row['title'] ?></h2>
         <h3><?= $row['state'] ?></h3>
+        <div class="grade-section first row">
+          <h2 class="col-md-7"><?= $row['firstname'] . ' ' . $row['lastname'] ?>'s Grade on Comprehensive Immigration Reform</h2>
+          <div class="social col-md-2 col-md-offset-1">
+            <a class="twitter" href="http://twitter.com">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="facebook" href="http://facebook.com">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+          <div class="col-md-2">
+          <span class="grade <?= strtolower(substr($row['rating'], 0, 1))?>"><?=$row['rating']?></span>
+          </div>
+        </div>
+        <div class="grade-section row">
+          <h2 class="col-md-7">Supports DREAM Act</h2>
+          <div class="social col-md-2 col-md-offset-1">
+            <a class="twitter" href="http://twitter.com">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="facebook" href="http://facebook.com">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <span class="no">No</span>
+          </div>
+        </div>
+        <div class="grade-section row">
+          <h2 class="col-md-7">Supports Pathway to Citizenship</h2>
+          <div class="social col-md-2 col-md-offset-1">
+            <a class="twitter" href="http://twitter.com">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a class="facebook" href="http://facebook.com">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <span class="yes">Yes</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

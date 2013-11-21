@@ -1,5 +1,5 @@
 <?php
-
+header('Content-type: application/json');
 require("../dbinfo.php");
 
 $sql = "SELECT firstname,lastname, title, party, state, bioguide_id FROM sunlight LIMIT 20";

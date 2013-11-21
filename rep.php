@@ -35,8 +35,8 @@ if($count < 1){
         <div class="clip">
           <img src="https://s3.amazonaws.com/push4reform/<?=$row['bioguide_id'] ?>.jpg">
         </div>
-        <button type="button" class="phone btn btn-lg btn-block"><span class="glyphicon glyphicon-earphone"></span><?= $row['phone'] ?></button>
-        <a class="twitter btn btn-lg btn-block" href="http://twitter.com/<?=$row['twitter_id']?>"><i class="fa fa-twitter"></i>@<?= $row['twitter_id'] ?></button>
+        <a href="tel:<?= $row['phone'] ?>" onclick="$.post( '<?= $site_url ?>call.php', { From: 'Website', Phone: '<?= $row['phone']?>' } );" class="phone btn btn-lg btn-block"><span class="glyphicon glyphicon-earphone"></span><?= $row['phone'] ?></a>
+        <a class="twitter btn btn-lg btn-block" href="http://twitter.com/intent/tweet?text=%40<?= $row['twitter_id']?>%20I%20support%20%23immigration%20reform%20that%20gives%20%23DREAMers%20a%20chance%20to%20fully%20contribute%20to%20our%20country.%20%23CIR%20%40FWD_us"><i class="fa fa-twitter"></i>@<?= $row['twitter_id'] ?></button>
         <a class="fb btn btn-lg btn-block" href="http://facebook.com/<?=$row['facebook_id'] ?>"><i class="fa fa-facebook-square"></i>Facebook</a>
       </div>
       <div class="col-md-8">

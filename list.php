@@ -1,15 +1,3 @@
-<?php
-
-require("dbinfo.php");
-
-$sql = "SELECT firstname,lastname, title, party, state, bioguide_id FROM sunlight";
-$result = mysql_query($sql); 
-while($row = mysql_fetch_assoc($result)){
-	$rows[] = $row;
-}
-
-
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -62,9 +50,6 @@ while($row = mysql_fetch_assoc($result)){
         <script src="js/vendor/underscore-min.js"></script>
         <script src="js/vendor/backbone-min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-          new RepListView(<?=json_encode($rows);?>);
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

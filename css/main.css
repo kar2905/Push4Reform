@@ -104,10 +104,44 @@ html, body {
   background-image: url("../img/bigprofile.jpg");
   background-size: 100% auto;
   height: 100%;
-  padding-top: 140px; }
+  padding-top: 50px; }
   .profile-page .profile-container {
     width: 800px;
     height: 100%;
     background: white;
     margin: 0 auto;
-    padding: 30px; }
+    padding: 25px 40px; }
+    .profile-page .profile-container h1 {
+      color: #06324c;
+      font-size: 35px;
+      margin: 10px 0 0;
+      font-family: Nexa-Bold; }
+    .profile-page .profile-container h2, .profile-page .profile-container h3 {
+      font-weight: lighter;
+      color: #5d5360;
+      font-size: 14px;
+      margin: 0; }
+    .profile-page .profile-container h3 {
+      text-transform: uppercase; }
+  .profile-page .clip {
+    height: 210px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .profile-page .clip img {
+      margin-top: -25px;
+      width: 100%; }
+  .profile-page .btn {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    border-radius: 0; }
+    .profile-page .btn span {
+      position: absolute;
+      left: 10px;
+      top: 12px; }
+    .profile-page .btn.phone {
+      background: #0e7293; }
+    .profile-page .btn.twitter {
+      background: #21b1ed; }
+    .profile-page .btn.fb {
+      background: #39579a; }

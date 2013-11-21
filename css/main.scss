@@ -133,12 +133,58 @@ html, body{
   background-image: url("../img/bigprofile.jpg");
   background-size: 100% auto;
   height: 100%;
-  padding-top: 140px;
+  padding-top: 50px;
   .profile-container{
     width: 800px;
     height: 100%;
     background: white;
     margin: 0 auto;
-    padding: 30px;
+    padding: 25px 40px;
+    h1, h2, h3{
+    }
+    h1{
+      color: #06324c;
+      font-size: 35px;
+      margin: 10px 0 0;
+      font-family: Nexa-Bold;
+    }
+    h2, h3{
+      font-weight: lighter;
+      color: #5d5360;
+      font-size: 14px;
+      margin: 0;
+    }
+    h3{
+      text-transform: uppercase;
+    }
+  }
+  .clip{
+    height: 210px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    img{
+      margin-top: -25px;
+      width: 100%;
+    }
+  }
+  .btn{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    border-radius: 0;
+    span{
+      position: absolute;
+      left: 10px;
+      top: 12px;
+    }
+    &.phone{
+      background: #0e7293;  
+    }
+    &.twitter{
+      background: #21b1ed;  
+    }
+    &.fb{
+      background: #39579a;  
+    }
   }
 }

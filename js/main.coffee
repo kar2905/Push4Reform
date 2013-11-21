@@ -3,6 +3,9 @@ Representative = Backbone.Model.extend({
 
 RepList = Backbone.Collection.extend({
   model: Representative
+  
+  url: 'api/reps.php'
+
 })
 
 RepView = Backbone.View.extend(
@@ -16,12 +19,12 @@ RepView = Backbone.View.extend(
 
 )
 
-window.RepListView = Backbone.View.extend(
+RepListView = Backbone.View.extend(
 
   el: "#reps-list"
 
   initialize: (reps) ->
-    @collection = new RepList(reps)
+    @collection = reps
 
     @render()
 
@@ -39,3 +42,12 @@ window.RepListView = Backbone.View.extend(
     @.$el.append(repView.render().el)
 
 )
+
+reps = new RepList()
+
+p = reps.fetch()
+
+p.done( ->
+  new RepListView(reps)
+)
+

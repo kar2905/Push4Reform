@@ -32,7 +32,7 @@ else{
           <img src="https://s3.amazonaws.com/push4reform/<%- bioguide_id  %>.jpg" />
         </div>
         <div class="caption">
-          <div class="img-circle a grade"><span>A</span></div>
+          <div class="img-circle <%- rating.substr(0, 1).toLowerCase() %> grade"><span><%- rating %></span></div>
           <h1><%- firstname + ' ' + lastname %></h1>
           <h2><%- party + ' ' + title %></h2>
           <h3><%- state %></h3>

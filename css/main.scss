@@ -37,7 +37,6 @@ html, body{
 }
 
 .reps-list{
-  width: 800px;
   margin-top: 20px;
   .representative-container .thumbnail{
     padding: 0; 
@@ -56,6 +55,12 @@ html, body{
     }
     &.b{
       background: #e5e200;
+    }
+    &.c{
+      background: #e59700;
+    }
+    &.d{
+      background: #e12f2f;
     }
     &.f{
       background: #ae3451;
@@ -76,7 +81,7 @@ html, body{
     box-shadow:         0px 0px 20px rgba(50, 50, 50, 0.5);
     position: absolute;
     top: -23px;
-    left: 96px;
+    left: 109px;
   }
   .caption{
     padding-top: 20px;

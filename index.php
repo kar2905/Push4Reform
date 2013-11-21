@@ -27,20 +27,18 @@ else{
 </div>
 
 <script type="text/template" id="rep-template">
-    <div class="col-md-4 representative-container">
       <div class="thumbnail">
         <div class="clip">
           <img src="https://s3.amazonaws.com/push4reform/<%- bioguide_id  %>.jpg" />
         </div>
         <div class="caption">
-          <div class="img-circle a grade"><span>A</span></div>
+          <div class="img-circle <%- rating.substr(0, 1).toLowerCase() %> grade"><span><%- rating %></span></div>
           <h1><%- firstname + ' ' + lastname %></h1>
           <h2><%- party + ' ' + title %></h2>
           <h3><%- state %></h3>
-          <a class="btn btn-primary btn-lg btn-block">Contact</a>
+          <a href="member/<%- firstname + '-' + lastname%>" class="btn btn-primary btn-lg btn-block">Contact</a>
         </div>
       </div>
-    </div>
 </script>
 <?php
   include 'includes/footer.php';

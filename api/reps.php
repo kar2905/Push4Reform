@@ -2,7 +2,7 @@
 header('Content-type: application/json');
 require("../dbinfo.php");
 
-$sql = "SELECT firstname,lastname, title, party, state, bioguide_id FROM sunlight LIMIT 20";
+$sql = "SELECT firstname,lastname, title, party, b.name_long as state, bioguide_id FROM sunlight a, state b WHERE a.state = b.name_short LIMIT 20";
 $result = mysql_query($sql); 
 while($row = mysql_fetch_assoc($result)){
 	if($row['party'] == 'R'){
@@ -10,7 +10,7 @@ while($row = mysql_fetch_assoc($result)){
 	}else{
 		$row['party'] = "Democrat";
 	}
-	
+
 	$row['grade'] = "A+";
 	$rows[] = $row;
 }

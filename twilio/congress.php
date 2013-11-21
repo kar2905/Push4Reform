@@ -12,4 +12,6 @@ $congressman = mysql_fetch_assoc(mysql_query($sql));
 ?>
 <Response>
     <Dial><?php echo $congressman['phone']?></Dial>
-</Response>
+</Response><?php 
+mysql_query("insert into calls(number,congressPhone,time) values ('".$_REQUEST['From']."','".$congressman['phone']."',NOW())");
+?>

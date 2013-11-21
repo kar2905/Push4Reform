@@ -20,3 +20,10 @@
     </div>
   </div>
 </div>
+<?php
+  include 'includes/footer.php';
+?>
+<script src="<?=$site_url?>js/profile.js"></script>
+</body>
+</html?>
+

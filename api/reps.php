@@ -10,6 +10,11 @@ while($row = mysql_fetch_assoc($result)){
 	}else{
 		$row['party'] = "Democrat";
 	}
+	if($row['title'] == "Rep"){
+		$row['title'] = "Representative";
+	}else{
+		$row['title'] = 'Senator';
+	}
 
 	$row['grade'] = "A+";
 	$rows[] = $row;

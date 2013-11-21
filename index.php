@@ -46,5 +46,14 @@ else{
   include 'includes/footer.php';
 ?>
 <script src="js/main.js"></script>
+<script>
+var reps = new RepList("<?=$state?>");
+
+var p = reps.fetch();
+
+p.done(function(){
+  new window.RepListView(reps)
+});
+</script>
 </body>
 </html>

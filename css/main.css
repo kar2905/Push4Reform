@@ -139,13 +139,55 @@ html, body {
   background-image: url("../img/bigprofile.jpg");
   background-size: 100% auto;
   height: 100%;
-  padding-top: 50px; }
+  padding-top: 50px;
+  overflow: auto; }
+  .profile-page .row.top {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+  .profile-page .facebook-faces {
+    padding-left: 27px;
+    position: relative; }
+    .profile-page .facebook-faces .overlay {
+      height: 70px;
+      position: absolute;
+      background: black;
+      opacity: 0.5;
+      width: 70px; }
+    .profile-page .facebook-faces div.clip {
+      height: 70px;
+      width: 70px;
+      overflow: hidden;
+      float: left;
+      margin-bottom: 0; }
+      .profile-page .facebook-faces div.clip img {
+        margin: 0;
+        min-height: 70px; }
   .profile-page .profile-container {
+    overflow: auto;
     width: 800px;
     height: 100%;
     background: white;
     margin: 0 auto;
     padding: 25px 40px; }
+    .profile-page .profile-container .overlay-text {
+      height: 100%;
+      position: absolute;
+      width: 700px;
+      z-index: 1001; }
+      .profile-page .profile-container .overlay-text h1 {
+        font-weight: lighter;
+        margin-top: 30px;
+        color: white; }
+      .profile-page .profile-container .overlay-text h2, .profile-page .profile-container .overlay-text h1, .profile-page .profile-container .overlay-text a {
+        color: white;
+        text-align: center; }
+      .profile-page .profile-container .overlay-text h2 {
+        font-size: 20px; }
+      .profile-page .profile-container .overlay-text a {
+        display: block;
+        text-decoration: underline;
+        font-weight: normal; }
     .profile-page .profile-container .btn-block .fa {
       position: absolute;
       left: 10px;

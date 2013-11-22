@@ -30,7 +30,7 @@ if($count < 1){
 ?>
 <div class="profile-page">
   <div class="profile-container container">
-    <div class="row"> 
+    <div class="row top"> 
       <div class="col-md-4">
         <div class="clip">
           <img src="https://s3.amazonaws.com/push4reform/<?=$row['bioguide_id'] ?>.jpg">
@@ -86,19 +86,27 @@ if($count < 1){
           </div>
         </div>
       </div>
-      <div class="col-md-8">
-      	<?php 
+    </div>
+<?php
       		require("dbinfo.php");
-
 $sql = "SELECT * FROM users";
 $res = mysql_query($sql);
-
+$count = mysql_num_rows($res);
+?>
+    <div class="facebook-faces row">
+      <div class="overlay-text">
+        <h1 id="count"><?=$count?></h1>
+        <h2>Show <?=$row['firstname']. ' '. $row['lastname']?> you support Comprehensive Immigration Reform </h2>
+        <a id="add-photo" href="#">Add your photo</a>
+      </div>
+      <div id="fb-images-container">
+      	<?php 
 while($row = mysql_fetch_assoc($res)){
-	echo "<img style='padding:5px;' src='http://graph.facebook.com/".$row['id']."/picture?type=large' width='70px' height='70px'/>";
+	echo "<div class='clip'><div class='overlay'></div><img src='http://graph.facebook.com/".$row['id']."/picture?type=large' '/></div>";
 
 }
 ?>
-     </div>
+      </div>
     </div>
   </div>
 </div>

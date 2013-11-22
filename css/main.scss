@@ -178,7 +178,59 @@ html, body{
   background-size: 100% auto;
   height: 100%;
   padding-top: 50px;
+  overflow: auto;
+  .row.top{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .facebook-faces{
+    padding-left: 27px;
+    position: relative;
+    .overlay{
+      height: 70px;
+      position: absolute;
+      background: black;
+      opacity: 0.5;
+      width: 70px;
+    }
+    div.clip{
+      height:70px;
+      width:70px;
+      overflow: hidden;
+      float:left;
+      margin-bottom: 0;
+      img{
+        margin:0;
+        min-height: 70px;
+      }
+    }
+  }
   .profile-container{
+    .overlay-text{
+      height: 100%;
+      position: absolute;
+      width: 700px;
+      z-index: 1001;
+      h1{
+        font-weight: lighter;
+        margin-top: 30px;
+        color: white;
+      }
+      h2, h1, a{
+        color: white;
+        text-align: center;
+      }
+      h2{
+        font-size: 20px;
+      }
+      a{
+        display: block;
+        text-decoration: underline;
+        font-weight: normal;
+      }
+    }
+    overflow: auto;
     width: 800px;
     height: 100%;
     background: white;

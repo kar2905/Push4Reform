@@ -6,7 +6,7 @@
         if (response.authResponse) {
           console.log('Welcome!  Fetching your information.... ');
           return FB.api('/me', function(response) {
-            return $.get('/Push4Reform/api/insertUser.php', {
+            return $.get('/api/insertUser.php', {
               uid: response.id
             }, function() {
               var count;

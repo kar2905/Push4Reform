@@ -1,8 +1,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/vendor/underscore-min.js"></script>
-<script src="js/vendor/backbone-min.js"></script>
+<script>window.jQuery || document.write('<script src=<?=$site_url?>"js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="<?=$site_url?>js/plugins.js"></script>
+<script src="<?=$site_url?>js/vendor/underscore-min.js"></script>
+<script src="<?=$site_url?>js/vendor/backbone-min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

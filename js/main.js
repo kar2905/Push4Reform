@@ -7,8 +7,10 @@
   window.RepList = Backbone.Collection.extend({
     model: Representative,
     url: 'api/reps.php',
-    initialize: function(state) {
-      if (state) {
+    initialize: function(state, zip) {
+      if (zip) {
+        return this.url = this.url + "?zip=" + state;
+      } else {
         return this.url = this.url + "?state=" + state;
       }
     }

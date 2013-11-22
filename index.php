@@ -45,7 +45,13 @@ else{
 ?>
 <script src="js/main.js"></script>
 <script>
-var reps = new RepList("<?=$state?>");
+
+<?php if(isset($_GET["zip"])){?>
+
+  var reps = new RepList("<?=$_GET['zip']?>", true);
+<?php } else { ?>
+  var reps = new RepList("<?=$state?>");
+<?php } ?>
 
 var p = reps.fetch();
 

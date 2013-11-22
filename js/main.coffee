@@ -6,8 +6,10 @@ window.RepList = Backbone.Collection.extend({
   
   url: 'api/reps.php'
 
-  initialize: (state)->
-    if(state)
+  initialize: (state, zip)->
+    if(zip)
+      @url = @url + "?zip=" + state
+    else
       @url = @url + "?state=" + state
 
 })
